@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang chu</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Bans hangf truc tuyen</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Trang chu</a>
+        </li>
+          {% for cate in categories %}
+        <li class="nav-item">
+            {{cate.name}}
+        </li>
+          {% endfor %}
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </div>
+</nav>
+</body>
+</html>
